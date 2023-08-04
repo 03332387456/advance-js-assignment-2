@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container py-5 text-center">
+        <h1 class="fs-1"><b>Search Mobile</b></h1>
+    </div>
+
+
+
+    
+
+
+
+    <div class="container my-5 ">
+        <div class="row">
+            <div class="col-md-8">
+                <input type="text" placeholder="Search Mobile here....." class="py-3 fs-2  rounded shadow w-100"
+                    id="inp">
+            </div>
+            <div class="col-md-4">
+                <label for="dropdown" class="fs-4"><u>Select an option:</u></label>
+                <select id="dropdown" class="p-3 fs-5 m-3">
+                    <option class="rounded p-2" id="brand" value="brand">brand</option>
+                    <option class="rounded p-2" id="model" value="model">model</option>
+                    <option class="rounded p-2" id="price" value="price">price</option>
+                    <option class="rounded p-2" id="camera" value="camera">camera</option>
+                    <option class="rounded p-2" id="ram" value="ram">ram</option>
+                    <option class="rounded p-2" id="rom" value="rom">rom</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="mobileList"></div>
+
+    <div class="container">
+        <button onclick="displayMobileList()" type="button" class="btn btn-success">Success</button>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
